@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rl404/mal-scraper": "1.2.0"
+    }
+}
