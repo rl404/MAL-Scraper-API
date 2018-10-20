@@ -1,5 +1,14 @@
 {
+    "name": "rl404/mal-scraper-api",
+    "description": "API for my MAL-Scraper",
+    "authors": [
+        {
+            "name": "Axel Oktavian Antonio",
+            "email": "axel.rl.404@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {
-        "rl404/mal-scraper": "1.2.0"
+        "rl404/mal-scraper": "~1.0"
     }
 }

@@ -187,6 +187,15 @@ switch ($method) {
 			print_r(paramError());
 		}
 		break;
+	case 'search-user':
+	case 'searchuser':
+		if ($query) {
+			$result = $myMalScraper->searchUser($query,$page);
+			print_r($result);
+		} else {
+			print_r(paramError());
+		}
+		break;
 	
 // Seasonal ----------
 	case 'season':
@@ -240,6 +249,20 @@ switch ($method) {
 		if ($user) {
 			$type = $type ? $type : 'anime';
 			$result = $myMalScraper->getUserList($user,$type,$status);
+			print_r($result);
+		} else {
+			print_r(paramError());
+		}
+		break;
+	case 'user-cover':
+	case 'usercover':
+		if ($user) {
+			header("Content-Type: text/css"); 
+			$type = $type ? $type : 'anime';
+			$query = $query ? $query : false;
+			$result = $myMalScraper->getUserCover($user,$type,$query);
+			$result = json_decode($result, true);
+			$result = $result['data'];
 			print_r($result);
 		} else {
 			print_r(paramError());
