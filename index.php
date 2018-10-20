@@ -3,6 +3,8 @@
 // Return json file
 header('Content-type:application/json;charset=utf-8');
 
+ini_set('max_execution_time', 0);
+
 // Use the Mal-Scraper library
 require "vendor/autoload.php";
 use MalScraper\MalScraper;
@@ -257,16 +259,41 @@ switch ($method) {
 	case 'user-cover':
 	case 'usercover':
 		if ($user) {
-			header("Content-Type: text/css"); 
+			header("Content-Type: text/css");
+
 			$type = $type ? $type : 'anime';
 			$query = $query ? $query : false;
+
 			$result = $myMalScraper->getUserCover($user,$type,$query);
 			$result = json_decode($result, true);
 			$result = $result['data'];
+
 			print_r($result);
 		} else {
 			print_r(paramError());
 		}
+		break;
+	case 'auto-cover':
+		header("Content-Type: text/css"); 
+
+		$user_url = $_SERVER['HTTP_REFERER'];
+		$user_url = str_replace('https://myanimelist.net', '', $user_url);
+
+		preg_match("/\/.+(list)\//", $user_url, $user_type);
+		$type = str_replace(['/','list'], '', $user_type[0]);
+
+		$user_url = str_replace(['/animelist/','/mangalist/'], '', $user_url);
+		$user_url = preg_replace('/\?+.+/', '', $user_url);
+
+		$user = $user_url;
+		$type = $type ? $type : 'anime';
+		$query = $query ? $query : false;
+
+		$result = $myMalScraper->getUserCover($user,$type,$query);
+		$result = json_decode($result, true);
+		$result = $result['data'];
+
+		print_r($result);
 		break;
 	default:
 		print_r(paramError(true));
