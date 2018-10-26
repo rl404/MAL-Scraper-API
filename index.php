@@ -57,7 +57,7 @@ switch ($method) {
 			print_r(paramError());
 		}
 		break;
-	case 'studio-producer':		
+	case 'studio-producer':
 	case 'studioproducer':
 		if ($id) {
 			$result = $myMalScraper->getStudioProducer($id,$page);
@@ -127,7 +127,7 @@ switch ($method) {
 			print_r(paramError());
 		}
 		break;
-	
+
 // List ----------
 	case 'all-anime-genre':
 	case 'allanimegenre':
@@ -149,7 +149,7 @@ switch ($method) {
 		$result = $myMalScraper->getAllMagazine();
 		print_r($result);
 		break;
-	
+
 // Search ----------
 	case 'search-anime':
 	case 'searchanime':
@@ -187,7 +187,16 @@ switch ($method) {
 			print_r(paramError());
 		}
 		break;
-	
+	case 'search-user':
+	case 'searchuser':
+		if ($query) {
+			$result = $myMalScraper->searchUser($query,$page);
+			print_r($result);
+		} else {
+			print_r(paramError());
+		}
+		break;
+
 // Seasonal ----------
 	case 'season':
 		$result = $myMalScraper->getSeason($year,$season);
@@ -207,7 +216,7 @@ switch ($method) {
 		$result = $myMalScraper->getTopManga($type);
 		print_r($result);
 		break;
-	
+
 // User ----------
 	case 'user':
 		if ($user) {
@@ -251,8 +260,8 @@ switch ($method) {
 }
 
 // Return error parameter
-function paramError($a=false) 
-{	
+function paramError($a=false)
+{
 	if ($a) {
 		header("HTTP/1.1 404");
 		$result['status'] = 404;

@@ -13,8 +13,8 @@
 
 namespace MalScraper;
 
-require "scraper\mal_scraper.php";
-require_once "scraper\cache.php";
+require "scraper/mal_scraper.php";
+require_once "scraper/cache.php";
 
 use scraper\Cache;
 
@@ -382,6 +382,17 @@ class MalScraper {
 	 */
 	private function searchPeople() {
 		return call_user_func_array ( '\scraper\searchPeople' , func_get_args() );
+	}
+
+	/**
+	 * Get list of result of user search
+	 *
+	 * @param 	string	$q 		search query
+	 * @param 	integer	$page 	page of result list
+	 * @return 	json 	\scraper\searchUser
+	 */
+	private function searchUser() {
+		return call_user_func_array ( '\scraper\searchUser' , func_get_args() );
 	}
 
 	/**
