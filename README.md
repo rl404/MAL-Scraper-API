@@ -33,24 +33,10 @@ _More will be coming soon..._
 ## Usage
 `HOST` is your hostname.
 ### General Methods
-#### Info
-Get anime or manga general info.
-
-Parameter | Description
-:---: | ---
-t | Info type. Either `anime` or `manga`
-id | Anime or manga ID
-
-Example: `HOST/info?t=anime&id=1`
+- *Info* <br> Get anime or manga general info. <br> `HOST/info?t=anime&id=1`
 
 #### Character
-Get anime or manga character.
-
-Parameter | Description
-:---: | ---
-id | Anime or manga character ID
-
-Example: `HOST/character?id=1`
+Get anime or manga character. `HOST/character?id=1`
 
 If you want to try, use `mal-scraper.000webhostapp.com` as the host.
 
