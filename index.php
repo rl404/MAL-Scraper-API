@@ -305,6 +305,7 @@ switch ($method) {
 // Return error parameter
 function paramError($a = false)
 {
+    $result = [];
     if ($a) {
         header('HTTP/1.1 404');
         $result['status'] = 404;
