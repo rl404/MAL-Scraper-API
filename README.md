@@ -91,9 +91,51 @@ _More will be coming soon..._
 - **Search User** - Get list of user search result.
   - `HOST/search-user?q=rl404`
   - `HOST/searchuser?q=rl404`
+### Seasonal Methods
+- **Season** - Get list of anime of the season.
+  - `HOST/season`
+  - `HOST/season?y=2018`
+  - `HOST/season?s=spring`
+  - `HOST/season?s=summer`
+  - `HOST/season?s=winter`
+  - `HOST/season?s=fall`
+  - `HOST/season?s=spring&y=2017`
+### Top List Methods
+- **Top Anime** - Get list of top anime.
+  - `HOST/top-anime`
+  - `HOST/topanime`
+  - `HOST/topanime?p=2`
+  - `HOST/topanime?t=2`
+  - `HOST/topanime?t=3&p=4`
+- **Top Manga** - Get list of top manga.
+  - `HOST/top-manga`
+  - `HOST/topmanga`
+  - `HOST/topmanga?p=2`
+  - `HOST/topmanga?t=2`
+  - `HOST/topmanga?t=3&p=4`
+### User Methods
+- **User** - Get user profile information
+  - `HOST/user?u=rl404`
+- **User Friends** - Get list of user's friends.
+  - `HOST/user-friend?u=r404`
+  - `HOST/userfriend?u=rl404`
+- **User History** - Get list of user's anime or manga update history.
+  - `HOST/user-history?u=rl404`
+  - `HOST/userhistory?u=rl404&t=anime`
+  - `HOST/userhistory?u=rl404&t=manga`
+- **User List** - Get list of user's anime or manga.
+  - `HOST/user-list?u=rl404`
+  - `HOST/userlist?u=rl404&t=anime`
+  - `HOST/userlist?u=rl404&t=manga`
+  - `HOST/userlist?u=rl404&st=1`
+  - `HOST/userlist?u=rl404&t=manga&st=2`
+- **User List Cover** - Get CSS file for anime or manga list cover. Please go [here](https://github.com/rl404/MAL-Scraper/wiki/getUserCover()) for more info. And don't forget to convert your style to url using [this](https://www.url-encode-decode.com/).
+  - `HOST/user-cover?u=rl404`
+  - `HOST/usercover?u=rl404&t=manga`
+  - `HOST/usercover?u=rl404&q=%23more%7Bid%7D+.borderRBL+div%7Bbackground-image%3Aurl%28%7Burl%7D%29%7D`
 
+## Try it yourself
 If you want to try, use `mal-scraper.000webhostapp.com` as the host.
-
 
 ## Disclamer
 All data (including anime, manga, people, etc) and MyAnimeList logos belong to their respective copyrights owners. Mal-Scraper does not have any affliation with content providers.
