@@ -209,13 +209,13 @@ switch ($method) {
 	case 'top-anime':
 	case 'topanime':
 		$type = $type ? $type : 0;
-		$result = $myMalScraper->getTopAnime($type);
+		$result = $myMalScraper->getTopAnime($type, $page);
 		print_r($result);
 		break;
 	case 'top-manga':
 	case 'topmanga':
 		$type = $type ? $type : 0;
-		$result = $myMalScraper->getTopManga($type);
+		$result = $myMalScraper->getTopManga($type, $page);
 		print_r($result);
 		break;
 
@@ -273,6 +273,8 @@ switch ($method) {
 			print_r(paramError());
 		}
 		break;
+
+// Secret ----------
 	case 'auto-cover':
 		header("Content-Type: text/css");
 

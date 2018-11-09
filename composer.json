@@ -1,6 +1,8 @@
 {
     "name": "rl404/mal-scraper-api",
-    "description": "API for my MAL-Scraper",
+    "description": "Very easy and simple REST API setup for my MAL-Scraper",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Axel Oktavian Antonio",
