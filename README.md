@@ -1,4 +1,5 @@
 # MAL-Scraper-API
+> Easy setup, Easy use, Easy life
 
 _Mal-Scraper-API_ is a very easy and simple REST API setup to get [MyAnimeList.net](https://myanimelist.net/) data by using my [Mal-Scraper](https://github.com/rl404/MAL-Scraper/) as data parser.
 
@@ -21,22 +22,42 @@ _Mal-Scraper-API_ is a very easy and simple REST API setup to get [MyAnimeList.n
 _More will be coming soon..._
 
 ## Installation
-1. `git clone https://github.com/rl404/MAL-Scraper-API.git` in your local computer
-2. Go inside and `composer install`
-3. Find PHP web host somewhere.
-4. Upload everything inside `MAL-Scraper-API` folder to your host. 
-5. That's it.
+1. `git clone https://github.com/rl404/MAL-Scraper-API.git`
+2. `composer install`
+3. That's it.
 
 #### Dependencies
 - PHP 5.4+
 
 ## Usage
-`HOST` is your hostname.
 ### General Methods
-- *Info* <br> Get anime or manga general info. <br> `HOST/info?t=anime&id=1`
-
-#### Character
-Get anime or manga character. `HOST/character?id=1`
+- **Info** - Get anime or manga general information. 
+  - `HOST/info?t=anime&id=1`
+  - `HOST/info?t=manga&id=1`
+- **Character** - Get anime or manga character information. 
+  - `HOST/character?id=1`
+- **People** - Get person information.
+  - `HOST/people?id=1`
+- **Studio/Producer** - Get studio or producer information.
+  - `HOST/studio-producer?id=1`
+  - `HOST/studioproducer?id=1`
+- **Magazine** - Get list of books published by the magazine.
+  - `HOST/magazine?id=1`
+- **Genre** - Get list of anime or manga that has the genre.
+  - `HOST/genre?t=anime&id=1`
+  - `HOST/genre?t=manga&id=1`
+### Additional Methods
+- **Character and Staff** - Get complete list of characters and staffs involved in anime or manga.
+  - `HOST/character-staff?t=anime&id=1`
+  - `HOST/characterstaff?t=manga&id=1`
+- **Statistics** - Get detail statistics information of anime or manga.
+  - `HOST/stat?t=anime&id=1`
+  - `HOST/stat?t=manga&id=1`
+- **Pictures** - Get list of additional anime or manga pictures.
+  - `HOST/picture?t=anime&id=1`
+  - `HOST/picture?t=manga&id=1`
+- **Character Pictures** - Get list of additional character picture.
+  - `HOST/
 
 If you want to try, use `mal-scraper.000webhostapp.com` as the host.
 
