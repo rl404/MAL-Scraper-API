@@ -56,8 +56,41 @@ _More will be coming soon..._
 - **Pictures** - Get list of additional anime or manga pictures.
   - `HOST/picture?t=anime&id=1`
   - `HOST/picture?t=manga&id=1`
-- **Character Pictures** - Get list of additional character picture.
-  - `HOST/
+- **Character Pictures** - Get list of additional character pictures.
+  - `HOST/character-picture?id=1`
+  - `HOST/characterpicture?id=1`
+- **People Pictures** - Get list of additional people pictures.
+  - `HOST/people-picture?id=1`
+  - `HOST/peoplepicture?id=1`
+### List Methods
+- **All Anime Genre** - Get list of all anime genre.
+  - `HOST/all-anime-genre`
+  - `HOST/allanimegenre`
+- **All Manga Genre** - Get list of all manga genre.
+  - `HOST/all-manga-genre`
+  - `HOST/allmangagenre`
+- **All Studio and Producer** - Get list of all studio and producer.
+  - `HOST/all-studio-producer`
+  - `HOST/allstudioproducer`
+- **All Magazine** - Get list of all magazine.
+  - `HOST/all-magazine`
+  - `HOST/allmagazine`
+### Search Methods
+- **Search Anime** - Get list of anime search result.
+  - `HOST/search-anime?q=clannad`
+  - `HOST/searchanime?q=clannad`
+- **Search Manga** - Get list of manga search result.
+  - `HOST/search-manga?q=berserk`
+  - `HOST/searchmanga?q=berserk`
+- **Search Character** - Get list of character search result.
+  - `HOST/search-character?q=luffy`
+  - `HOST/searchcharacter?q=luffy`
+- **Search People** - Get list of people search result.
+  - `HOST/search-people?q=hana`
+  - `HOST/searchpeople?q=hana`
+- **Search User** - Get list of user search result.
+  - `HOST/search-user?q=rl404`
+  - `HOST/searchuser?q=rl404`
 
 If you want to try, use `mal-scraper.000webhostapp.com` as the host.
 
