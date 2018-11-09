@@ -1,9 +1,10 @@
-# MAL-Scraper-API
+# MAL-Scraper-API <a href="https://php.net/"><img src="https://img.shields.io/badge/php-%3E%3D5.4-8892BF.svg"></a><a href="https://styleci.io/repos/152761246"><img src="https://styleci.io/repos/152761246/shield?branch=master&style=flat" alt="StyleCI Status"></a><a href="https://app.codacy.com/app/rl404/MAL-Scraper-API?utm_source=github.com&utm_medium=referral&utm_content=rl404/MAL-Scraper-API&utm_campaign=Badge_Grade_Dashboard"><img src="https://api.codacy.com/project/badge/Grade/0b1813be20634d6f972866f64c079687" alt="Codacy Status"></a><a href="https://packagist.org/packages/rl404/mal-scraper-api"><img src="https://poser.pugx.org/rl404/mal-scraper-api/license" alt="License"></a>
+
 > Easy setup, Easy use, Easy life
 
 _Mal-Scraper-API_ is a very easy and simple REST API setup to get [MyAnimeList.net](https://myanimelist.net/) data by using my [Mal-Scraper](https://github.com/rl404/MAL-Scraper/) as data parser.
 
-### Features 
+### Features
 - Get general information of anime, manga, charater (from anime and manga), or people (voice actor, author, staff, etc)
 - Get additional information of anime or manga character and staff, statistic and score, or picture
 - Get list of anime or manga of selected studio/producer, magazine, or genre
@@ -31,10 +32,10 @@ _More will be coming soon..._
 
 ## Usage
 ### General Methods
-- **Info** - Get anime or manga general information. 
+- **Info** - Get anime or manga general information.
   - `HOST/info?t=anime&id=1`
   - `HOST/info?t=manga&id=1`
-- **Character** - Get anime or manga character information. 
+- **Character** - Get anime or manga character information.
   - `HOST/character?id=1`
 - **People** - Get person information.
   - `HOST/people?id=1`
