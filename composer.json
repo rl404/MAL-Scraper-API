@@ -1,7 +1,7 @@
 {
     "name": "rl404/mal-scraper-api",
-    "description": "Very easy and simple REST API setup for my MAL-Scraper",
-    "type": "library",
+    "description": "Very easy and simple REST API setup get MyAnimeList.net data by using my Mal-Scraper as data parser.",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
