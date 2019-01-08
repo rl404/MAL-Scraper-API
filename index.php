@@ -218,6 +218,16 @@ switch ($method) {
         $result = $myMalScraper->getTopManga($type, $page);
         print_r($result);
         break;
+    case 'top-character':
+    case 'topcharacter':
+        $result = $myMalScraper->getTopCharacter($page);
+        print_r($result);
+        break;
+    case 'top-people':
+    case 'toppeople':
+        $result = $myMalScraper->getTopPeople($page);
+        print_r($result);
+        break;
 
 // User ----------
     case 'user':

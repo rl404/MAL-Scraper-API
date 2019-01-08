@@ -14,6 +14,7 @@ _Mal-Scraper-API_ is a very easy and simple REST API setup to get [MyAnimeList.n
 - Get seasonal anime
 - Get list of top anime from various categories (all, airing, upcoming, etc) (pagination supported)
 - Get list of top manga from various categories (all, manga, novel, etc) (pagination supported)
+- Get list of most favorited character and people (pagination supported)
 - Get information of user profile, friends, history, and anime/manga list
 - Caching (using [Simple-PHP-Cache library](https://github.com/cosenary/Simple-PHP-Cache)) (data cached for 1 day as default)
 - Return with HTTP response
@@ -29,6 +30,7 @@ _More will be coming soon..._
 
 #### Dependencies
 - PHP 5.4+
+- rl404/mal-scraper >= 1.3.0
 
 ## Usage
 ### General Methods
@@ -114,6 +116,14 @@ _More will be coming soon..._
   - `HOST/topmanga?p=2`
   - `HOST/topmanga?t=2`
   - `HOST/topmanga?t=3&p=4`
+- **Top Character** - Get list of most favorited character.
+  - `HOST/top-character`
+  - `HOST/topcharacter`
+  - `HOST/topcharacter?p=2`
+- **Top People** - Get list of most favorited people.
+  - `HOST/top-people`
+  - `HOST/toppeople`
+  - `HOST/toppeople?p=2`
 ### User Methods
 - **User** - Get user profile information
   - `HOST/user?u=rl404`
@@ -138,7 +148,7 @@ _More will be coming soon..._
 For more information about the methods, params, and output, you can read the [code](https://github.com/rl404/MAL-Scraper-API/blob/master/index.php) by yourself (it should be easy to read and understand) or you can go to the [wiki](https://github.com/rl404/MAL-Scraper/wiki) library.
 
 ## Try it yourself
-If you want to try, use `mal-scraper.000webhostapp.com` as the host.
+If you want to try, use `mal-scraper.000webhostapp.com` or `mal-scraper.epizy.com/api` as the host.
 
 ## Disclamer
 All data (including anime, manga, people, etc) and MyAnimeList logos belong to their respective copyrights owners. Mal-Scraper does not have any affliation with content providers.
