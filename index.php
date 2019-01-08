@@ -334,27 +334,17 @@ function paramError($a = false)
 // Get current season (spring,summer,fall,winter)
 function getCurrentSeason()
 {
-    $day = new DateTime();
+    $currentMonth = date('m');
 
-    //  Days of spring
-    $spring_starts = new DateTime('April 1');
-    $spring_ends = new DateTime('June 30');
+    if ($currentMonth >= '01' && $currentMonth < '04') {
+        return 'winter';
+    }
+    if ($currentMonth >= '04' && $currentMonth < '07') {
+        return 'spring';
+    }
+    if ($currentMonth >= '07' && $currentMonth < '10') {
+        return 'summer';
+    }
 
-    //  Days of summer
-    $summer_starts = new DateTime('July 1');
-    $summer_ends = new DateTime('September 30');
-
-    //  Days of autumn
-    $autumn_starts = new DateTime('October 1');
-    $autumn_ends = new DateTime('December 31');
-
-    //  If $day is between the days of spring, summer, autumn, and winter
-    if ($day >= $spring_starts && $day <= $spring_ends) :
-        $season = 'spring'; elseif ($day >= $summer_starts && $day <= $summer_ends) :
-        $season = 'summer'; elseif ($day >= $autumn_starts && $day <= $autumn_ends) :
-        $season = 'fall'; else :
-        $season = 'winter';
-    endif;
-
-    return $season;
+    return 'autumn';
 }
