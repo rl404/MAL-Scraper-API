@@ -21,6 +21,9 @@ $method = isset($_GET['m']) ? $_GET['m'] : '';
 $type = isset($_GET['t']) ? $_GET['t'] : '';
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
+$id1 = isset($_GET['id1']) ? $_GET['id1'] : '';
+$id2 = isset($_GET['id2']) ? $_GET['id2'] : '';
+
 $page = isset($_GET['p']) ? $_GET['p'] : 1;
 
 $query = isset($_GET['q']) ? $_GET['q'] : '';
@@ -76,9 +79,17 @@ switch ($method) {
             print_r(paramError());
         }
         break;
-    case 'genre':
-        if ($type && $id) {
-            $result = $myMalScraper->getGenre($type, $id, $page);
+    case 'review':
+        if ($id) {
+            $result = $myMalScraper->getReview($id);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'recommendation':
+        if ($type && $id1 && $id2) {
+            $result = $myMalScraper->getRecommendation($type, $id1, $id2);
             print_r($result);
         } else {
             print_r(paramError());
@@ -129,6 +140,58 @@ switch ($method) {
             print_r(paramError());
         }
         break;
+    case 'video':
+        if ($id) {
+            $result = $myMalScraper->getVideo($id, $page);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'episode':
+        if ($id) {
+            $result = $myMalScraper->getEpisode($id, $page);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'anime-review':
+    case 'animereview':
+        if ($id) {
+            $result = $myMalScraper->getAnimeReview($id, $page);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'manga-review':
+    case 'mangareview':
+        if ($id) {
+            $result = $myMalScraper->getMangaReview($id, $page);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'anime-recommendation':
+    case 'animerecommendation':
+        if ($id) {
+            $result = $myMalScraper->getAnimeRecommendation($id);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
+    case 'manga-recommendation':
+    case 'mangarecommendation':
+        if ($id) {
+            $result = $myMalScraper->getMangaRecommendation($id);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
 
 // List ----------
     case 'all-anime-genre':
@@ -149,6 +212,16 @@ switch ($method) {
     case 'all-magazine':
     case 'allmagazine':
         $result = $myMalScraper->getAllMagazine();
+        print_r($result);
+        break;
+    case 'all-review':
+    case 'allreview':
+        $result = $myMalScraper->getAllReview($type, $page);
+        print_r($result);
+        break;
+    case 'all-recommendation':
+    case 'allrecommendation':
+        $result = $myMalScraper->getAllRecommendation($type, $page);
         print_r($result);
         break;
 
