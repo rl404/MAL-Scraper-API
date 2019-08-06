@@ -25,8 +25,15 @@ _More will be coming soon..._
 
 ## Installation
 1. `git clone https://github.com/rl404/MAL-Scraper-API.git`
-2. `composer install`
-3. That's it.
+2. `cd MAL-Scraper-API`
+3. `composer install`
+4. That's it.
+
+#### With Docker
+1. `git clone https://github.com/rl404/MAL-Scraper-API.git`
+2. `cd MAL-Scraper-API`
+3. `docker-compose up`
+4. `http://localhost:8000` is ready to use.
 
 #### Dependencies
 - PHP 5.4+

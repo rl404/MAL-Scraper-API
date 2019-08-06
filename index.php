@@ -9,6 +9,8 @@ ini_set('max_execution_time', 0);
 require 'vendor/autoload.php';
 use MalScraper\MalScraper;
 
+date_default_timezone_set('UTC');
+
 $myMalScraper = new MalScraper([
     'enable_cache' => true,
     'cache_time'   => 3600,

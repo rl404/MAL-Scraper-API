@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  mal_api:
+    container_name: mal_api_container
+    image: mal_api_image
+    build: ./
+    ports:
+      - 8000:80
