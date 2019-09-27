@@ -81,6 +81,14 @@ switch ($method) {
             print_r(paramError());
         }
         break;
+    case 'genre':
+        if ($type && $id) {
+            $result = $myMalScraper->getGenre($type, $id, $page);
+            print_r($result);
+        } else {
+            print_r(paramError());
+        }
+        break;
     case 'review':
         if ($id) {
             $result = $myMalScraper->getReview($id);
