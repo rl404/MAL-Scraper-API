@@ -3,7 +3,7 @@
 // Return json file
 header('Content-type:application/json;charset=utf-8');
 
-ini_set('max_execution_time', 0);
+// ini_set('max_execution_time', 0);
 
 // Use the Mal-Scraper library
 require 'vendor/autoload.php';
