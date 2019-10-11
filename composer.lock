@@ -1,0 +1,157 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "98bdab071942aad74af111d1d864628b",
+    "packages": [
+        {
+            "name": "rl404/mal-scraper",
+            "version": "v1.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rl404/MAL-Scraper.git",
+                "reference": "3e378a60dfaaef94949bccce4ff06f9399869bee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rl404/MAL-Scraper/zipball/3e378a60dfaaef94949bccce4ff06f9399869bee",
+                "reference": "3e378a60dfaaef94949bccce4ff06f9399869bee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "rl404/php-simple-html-dom-parser": "~1.5.0",
+                "rl404/simple-php-cache": "~1.6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MalScraper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Axel Oktavian Antonio",
+                    "email": "axel.rl.404@gmail.com"
+                }
+            ],
+            "description": "Unofficial MyAnimeList API that scrap and parse everything from MyAnimeList web into array and json",
+            "time": "2019-04-21T08:35:55+00:00"
+        },
+        {
+            "name": "rl404/php-simple-html-dom-parser",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rl404/php-simple-html-dom-parser.git",
+                "reference": "02aad6a83135f2e1e9e12d676fcdeee017ad2995"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rl404/php-simple-html-dom-parser/zipball/02aad6a83135f2e1e9e12d676fcdeee017ad2995",
+                "reference": "02aad6a83135f2e1e9e12d676fcdeee017ad2995",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                },
+                {
+                    "name": "S.C. Chen",
+                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                },
+                {
+                    "name": "Axel Oktavian Antonio",
+                    "email": "axel.rl.404@gmail.com"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2019-04-21T08:49:09+00:00"
+        },
+        {
+            "name": "rl404/simple-php-cache",
+            "version": "v1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rl404/Simple-PHP-Cache.git",
+                "reference": "f04565f86f124db36dc9ae33c25ac64e604727dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rl404/Simple-PHP-Cache/zipball/f04565f86f124db36dc9ae33c25ac64e604727dc",
+                "reference": "f04565f86f124db36dc9ae33c25ac64e604727dc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Metz",
+                    "email": "christian-metz1@gmx.net",
+                    "homepage": "http://metzweb.net"
+                },
+                {
+                    "name": "Axel Oktavian Antonio",
+                    "email": "axel.rl.404@gmail.com"
+                }
+            ],
+            "description": "A light, simple but powerful PHP5 Cache Class which uses the filesystem for caching.",
+            "homepage": "https://github.com/cosenary/Simple-PHP-Cache",
+            "keywords": [
+                "Simple",
+                "cache",
+                "filesystem",
+                "json"
+            ],
+            "time": "2018-11-09T06:22:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
