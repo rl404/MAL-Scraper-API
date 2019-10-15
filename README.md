@@ -42,120 +42,153 @@ _More will be coming soon..._
 ## Usage
 ### General Methods
 - **Info** - Get anime or manga general information.
-  - `HOST/info?t=anime&id=1`
-  - `HOST/info?t=manga&id=1`
+  - `/info?t=anime&id=1`
+  - `/info?t=manga&id=1`
 - **Character** - Get anime or manga character information.
-  - `HOST/character?id=1`
+  - `/character?id=1`
 - **People** - Get person information.
-  - `HOST/people?id=1`
+  - `/people?id=1`
 - **Studio/Producer** - Get studio or producer information.
-  - `HOST/studio-producer?id=1`
-  - `HOST/studioproducer?id=1`
+  - `/studio-producer?id=1`
+  - `/studioproducer?id=1`
 - **Magazine** - Get list of books published by the magazine.
-  - `HOST/magazine?id=1`
+  - `/magazine?id=1`
 - **Genre** - Get list of anime or manga that has the genre.
-  - `HOST/genre?t=anime&id=1`
-  - `HOST/genre?t=manga&id=1`
+  - `/genre?t=anime&id=1`
+  - `/genre?t=manga&id=1`
+- **Review** - Get review of anime or manga.
+  - `/review?id=1`
+- **Recommendation** - Get recommendation of anime or manga.
+  - `/recommendation?t=anime&id1=1&id2=205`
+  - `/recommendation?t=manga&id1=1&id2=21`
+
 ### Additional Methods
 - **Character and Staff** - Get complete list of characters and staffs involved in anime or manga.
-  - `HOST/character-staff?t=anime&id=1`
-  - `HOST/characterstaff?t=manga&id=1`
+  - `/character-staff?t=anime&id=1`
+  - `/characterstaff?t=manga&id=1`
 - **Statistics** - Get detail statistics information of anime or manga.
-  - `HOST/stat?t=anime&id=1`
-  - `HOST/stat?t=manga&id=1`
+  - `/stat?t=anime&id=1`
+  - `/stat?t=manga&id=1`
 - **Pictures** - Get list of additional anime or manga pictures.
-  - `HOST/picture?t=anime&id=1`
-  - `HOST/picture?t=manga&id=1`
+  - `/picture?t=anime&id=1`
+  - `/picture?t=manga&id=1`
 - **Character Pictures** - Get list of additional character pictures.
-  - `HOST/character-picture?id=1`
-  - `HOST/characterpicture?id=1`
+  - `/character-picture?id=1`
+  - `/characterpicture?id=1`
 - **People Pictures** - Get list of additional people pictures.
-  - `HOST/people-picture?id=1`
-  - `HOST/peoplepicture?id=1`
+  - `/people-picture?id=1`
+  - `/peoplepicture?id=1`
+- **Video** - Get list of additional anime video list.
+  - `/video?id=1`
+  - `/video?id=1&p=2`
+- **Episode** - Get list of additional anime episode list.
+  - `/episode?id=1`
+  - `/episode?id=1&p=2`
+- **Review** - Get list of additional anime or manga review list.
+  - `/anime-review?id=1`
+  - `/animereview?id=1&p=2`
+  - `/manga-review?id=1`
+  - `/mangareview?id=1&p=2`
+- **Recommendation** - Get list of additional anime or manga recommendation list.
+  - `/anime-recommendation?id=1`
+  - `/animerecommendation?id=1`
+  - `/manga-recommendation?id=1`
+  - `/mangarecommendation?id=1`
+
 ### List Methods
 - **All Anime Genre** - Get list of all anime genre.
-  - `HOST/all-anime-genre`
-  - `HOST/allanimegenre`
+  - `/all-anime-genre`
+  - `/allanimegenre`
 - **All Manga Genre** - Get list of all manga genre.
-  - `HOST/all-manga-genre`
-  - `HOST/allmangagenre`
+  - `/all-manga-genre`
+  - `/allmangagenre`
 - **All Studio and Producer** - Get list of all studio and producer.
-  - `HOST/all-studio-producer`
-  - `HOST/allstudioproducer`
+  - `/all-studio-producer`
+  - `/allstudioproducer`
 - **All Magazine** - Get list of all magazine.
-  - `HOST/all-magazine`
-  - `HOST/allmagazine`
+  - `/all-magazine`
+  - `/allmagazine`
+- **All Review** - Get list of all review.
+  - `/all-review?t=anime`
+  - `/allreview?t=manga&p=2`
+- **All Recommendation** - Get list of all recommendation.
+  - `/all-recommendation?t=anime`
+  - `/allrecommendation?t=manga&p=2`
+
 ### Search Methods
 - **Search Anime** - Get list of anime search result.
-  - `HOST/search-anime?q=clannad`
-  - `HOST/searchanime?q=clannad`
+  - `/search-anime?q=clannad`
+  - `/searchanime?q=clannad`
 - **Search Manga** - Get list of manga search result.
-  - `HOST/search-manga?q=berserk`
-  - `HOST/searchmanga?q=berserk`
+  - `/search-manga?q=berserk`
+  - `/searchmanga?q=berserk`
 - **Search Character** - Get list of character search result.
-  - `HOST/search-character?q=luffy`
-  - `HOST/searchcharacter?q=luffy`
+  - `/search-character?q=luffy`
+  - `/searchcharacter?q=luffy`
 - **Search People** - Get list of people search result.
-  - `HOST/search-people?q=hana`
-  - `HOST/searchpeople?q=hana`
+  - `/search-people?q=hana`
+  - `/searchpeople?q=hana`
 - **Search User** - Get list of user search result.
-  - `HOST/search-user?q=rl404`
-  - `HOST/searchuser?q=rl404`
+  - `/search-user?q=rl404`
+  - `/searchuser?q=rl404`
+
 ### Seasonal Methods
 - **Season** - Get list of anime of the season.
-  - `HOST/season`
-  - `HOST/season?y=2018`
-  - `HOST/season?s=spring`
-  - `HOST/season?s=summer`
-  - `HOST/season?s=winter`
-  - `HOST/season?s=fall`
-  - `HOST/season?s=spring&y=2017`
+  - `/season`
+  - `/season?y=2018`
+  - `/season?s=spring`
+  - `/season?s=summer`
+  - `/season?s=winter`
+  - `/season?s=fall`
+  - `/season?s=spring&y=2017`
+
 ### Top List Methods
 - **Top Anime** - Get list of top anime.
-  - `HOST/top-anime`
-  - `HOST/topanime`
-  - `HOST/topanime?p=2`
-  - `HOST/topanime?t=2`
-  - `HOST/topanime?t=3&p=4`
+  - `/top-anime`
+  - `/topanime`
+  - `/topanime?p=2`
+  - `/topanime?t=2`
+  - `/topanime?t=3&p=4`
 - **Top Manga** - Get list of top manga.
-  - `HOST/top-manga`
-  - `HOST/topmanga`
-  - `HOST/topmanga?p=2`
-  - `HOST/topmanga?t=2`
-  - `HOST/topmanga?t=3&p=4`
+  - `/top-manga`
+  - `/topmanga`
+  - `/topmanga?p=2`
+  - `/topmanga?t=2`
+  - `/topmanga?t=3&p=4`
 - **Top Character** - Get list of most favorited character.
-  - `HOST/top-character`
-  - `HOST/topcharacter`
-  - `HOST/topcharacter?p=2`
+  - `/top-character`
+  - `/topcharacter`
+  - `/topcharacter?p=2`
 - **Top People** - Get list of most favorited people.
-  - `HOST/top-people`
-  - `HOST/toppeople`
-  - `HOST/toppeople?p=2`
+  - `/top-people`
+  - `/toppeople`
+  - `/toppeople?p=2`
+
 ### User Methods
 - **User** - Get user profile information
-  - `HOST/user?u=rl404`
+  - `/user?u=rl404`
 - **User Friends** - Get list of user's friends.
-  - `HOST/user-friend?u=r404`
-  - `HOST/userfriend?u=rl404`
+  - `/user-friend?u=r404`
+  - `/userfriend?u=rl404`
 - **User History** - Get list of user's anime or manga update history.
-  - `HOST/user-history?u=rl404`
-  - `HOST/userhistory?u=rl404&t=anime`
-  - `HOST/userhistory?u=rl404&t=manga`
+  - `/user-history?u=rl404`
+  - `/userhistory?u=rl404&t=anime`
+  - `/userhistory?u=rl404&t=manga`
 - **User List** - Get list of user's anime or manga.
-  - `HOST/user-list?u=rl404`
-  - `HOST/userlist?u=rl404&t=anime`
-  - `HOST/userlist?u=rl404&t=manga`
-  - `HOST/userlist?u=rl404&st=1`
-  - `HOST/userlist?u=rl404&t=manga&st=2`
+  - `/user-list?u=rl404`
+  - `/userlist?u=rl404&t=anime`
+  - `/userlist?u=rl404&t=manga`
+  - `/userlist?u=rl404&st=1`
+  - `/userlist?u=rl404&t=manga&st=2`
 - **User List Cover** - Get CSS file for anime or manga list cover. Please go [here](https://github.com/rl404/MAL-Scraper/wiki/getUserCover()) for more info. And don't forget to convert your style to url using [this](https://www.url-encode-decode.com/).
-  - `HOST/user-cover?u=rl404`
-  - `HOST/usercover?u=rl404&t=manga`
-  - `HOST/usercover?u=rl404&q=%23more%7Bid%7D+.borderRBL+div%7Bbackground-image%3Aurl%28%7Burl%7D%29%7D`
+  - `/user-cover?u=rl404`
+  - `/usercover?u=rl404&t=manga`
+  - `/usercover?u=rl404&q=%23more%7Bid%7D+.borderRBL+div%7Bbackground-image%3Aurl%28%7Burl%7D%29%7D`
 
 For more information about the methods, params, and output, you can read the [code](https://github.com/rl404/MAL-Scraper-API/blob/master/index.php) by yourself (it should be easy to read and understand) or you can go to the [wiki](https://github.com/rl404/MAL-Scraper/wiki) library.
 
 ## Try it yourself
-If you want to try, use `mal-scraper.000webhostapp.com` or `mal-scraper.epizy.com/api` as the host.
+If you want to try, use `mal-scraper.000webhostapp.com` or `mal-scraper.epizy.com/api` as the domain.
 
 ## Disclamer
 All data (including anime, manga, people, etc) and MyAnimeList logos belong to their respective copyrights owners. Mal-Scraper does not have any affliation with content providers.
