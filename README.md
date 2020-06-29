@@ -1,3 +1,5 @@
+> Go [here](https://github.com/rl404/go-malscraper) for a better and more updated version.
+
 # MAL-Scraper-API     <a href="https://php.net/"><img src="https://img.shields.io/badge/php-%3E%3D5.4-8892BF.svg"></a> <a href="https://styleci.io/repos/152761246"><img src="https://styleci.io/repos/152761246/shield?branch=master&style=flat" alt="StyleCI Status"></a> <a href="https://app.codacy.com/app/rl404/MAL-Scraper-API?utm_source=github.com&utm_medium=referral&utm_content=rl404/MAL-Scraper-API&utm_campaign=Badge_Grade_Dashboard"><img src="https://api.codacy.com/project/badge/Grade/0b1813be20634d6f972866f64c079687" alt="Codacy Status"></a> <a href="https://scrutinizer-ci.com/g/rl404/MAL-Scraper-API/?branch=master"><img src="https://scrutinizer-ci.com/g/rl404/MAL-Scraper-API/badges/quality-score.png?b=master" alt="Scrutinizer Score"></a> <a href="https://packagist.org/packages/rl404/mal-scraper-api"><img src="https://poser.pugx.org/rl404/mal-scraper-api/license" alt="License"></a>
 
 > Easy setup, Easy use, Easy life
